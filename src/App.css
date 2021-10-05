@@ -1,22 +1,24 @@
-body {
-  font-family: Roboto, sans-serif;
-  margin: 2rem;
+table,
+input,
+label {
+  font-size: 1.2rem;
+  font-family: monospace;
+  margin-bottom: 0.5rem;
 }
 
-.container {
-  max-width: 300px;
-  margin: 0 auto;
+td {
+  padding: 0.3rem;
 }
 
-.anime {
-  opacity: 0;
-  transform: translateX(-10px);
-  animation: anime 0.3s forwards;
+th {
+  padding-right: 1rem;
+  text-align: left;
 }
 
-@keyframes anime {
-  to {
-    transform: initial;
-    opacity: 1;
-  }
+tr:nth-child(even) {
+  background: #eee;
+}
+
+input[type='number'] {
+  display: block;
 }
